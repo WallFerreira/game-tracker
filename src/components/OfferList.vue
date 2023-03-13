@@ -23,10 +23,22 @@
     },
     async created() {
       const response = await axios.get(
-        "https://www.cheapshark.com/api/1.0/deals?pageNumber=0&pageSize=12&storeID=1&onSale=1&AAA=1"
+        "https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=20"
       );
       this.offers = response.data;
     },
   };
-  </script>
+ </script>
+<style>
+
+  .container{
+    margin: 10rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .row{
+    columns: 3;
+  }
+</style>
   

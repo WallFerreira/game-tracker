@@ -1,9 +1,9 @@
 <template>
-    <div id="app">
-    <NavBar/>  
-    <OfferList/>
-    <PageFooter/>
-    </div>
+  <div id="app">
+    <NavBar />
+    <OfferList />
+    <PageFooter />
+  </div>
 </template>
 
 <script>
@@ -22,15 +22,16 @@ export default {
 </script>
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  background: linear-gradient(45deg, #0B1641 0%, #C70160 100%), #FFFFFF;;
+  background: linear-gradient(45deg, #0B1641 0%, #C70160 100%), #FFFFFF;
+  align-content: center;
+  justify-content: center;
+  background-size: 100%;
+  background-position: cover
 }
 </style>
