@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <NavBar />
+    <OfferFilter/>
     <OfferList />
     <PageFooter />
   </div>
@@ -10,13 +11,16 @@
 import NavBar from './components/NavBar.vue';
 import OfferList from './components/OfferList.vue';
 import PageFooter from './components/PageFooter.vue';
+import OfferFilter from './components/OfferFilter.vue';
 
 export default {
   name: 'App',
   components: {
     NavBar,
     OfferList,
-    PageFooter
+    PageFooter,
+    OfferFilter
+    
   }
 }
 </script>

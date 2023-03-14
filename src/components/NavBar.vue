@@ -1,7 +1,5 @@
 <template>
-
     <div class="navbar">
-
         <div>
             <img id="icone" src="../assets/Vector.png" alt="">
             <img id="logo" src="../assets/Game_Tracker.png" alt="">
@@ -10,14 +8,12 @@
 </template>
 <script>
 export default {
+    name:"nav-bar"
 
 }
 </script>
 <style scoped>
-*,
-* ::after,
-*::before
-{
+*{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -41,7 +37,6 @@ nav
 
 .navbar-item{
     display: inline;
-
     color: #FFFFFF;
     text-decoration: none;
 }
