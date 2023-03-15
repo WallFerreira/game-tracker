@@ -27,7 +27,7 @@
 
     async created() {
       const response = await axios.get(
-        "https://www.cheapshark.com/api/1.0/deals?pageNumber=0&pageSize=12&storeID=2&onSale=1&AAA=3"
+        "https://www.cheapshark.com/api/1.0/deals?pageNumber=0&pageSize=12&storeID=3&onSale=1&AAA=1"
       );
       this.offers = response.data;
     },
@@ -36,7 +36,8 @@
 <style>
 
   .container{
-    margin: 10rem;
+    display: flex;
+    margin: 1rem;
     display: flex;
     justify-content: center;
   }

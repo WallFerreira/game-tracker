@@ -36,7 +36,10 @@ export default {
   },
   methods: {
     goToDetails(dealID) {
-      window.location.href = `https://www.cheapshark.com/redirect?dealID=${dealID}`
+      if (dealID) {
+        window.open(`https://www.cheapshark.com/redirect?dealID=${dealID}`, '_blank');
+      }
+
     },
   },
 
@@ -52,14 +55,17 @@ export default {
 .card {
   width: 26rem;
   height: 18rem;
-  margin-left: 0.1rem;
   display: flex;
   flex-direction: column;
 
 }
 
+.card:hover {
+  top: 2;
+
+}
+
 .card img {
-  max-width: 100%;
   size: border-box;
   height: 50%;
   border-top-left-radius: 10px;
@@ -91,13 +97,23 @@ export default {
   margin-bottom: 1rem;
   background: #C70160;
   border: none;
-  box-shadow: 0px 0px 5px -1px
+  cursor: pointer;
+
 }
 
 .card button:hover {
   background: rgba(150, 3, 74, 0.843);
   transition: .5s;
+  position:relative;
+  
 
+
+}
+
+.card button:active{
+  position:relative;
+  top:2px;
+  box-shadow:none;
 }
 
 .card-title {
@@ -106,8 +122,11 @@ export default {
   margin-left: 1.5rem;
   margin-top: 0.5rem;
   font-family: 'Bai Jamjuree', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 28px;
+  text-transform: uppercase;
+  font-weight:300;
+
 }
 
 #saving-button {

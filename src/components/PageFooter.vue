@@ -1,9 +1,9 @@
 <template>
     <div class="page-footer">
         <div id="footer-icon">
-            <img src="../assets/Vector.png" alt="">
+            <img src="../assets/Vector.svg" alt="">
         </div>
-        
+
         <p id="footer-text">© 2021, Game Tracker Inc. Todos os direitos reservados. Nulla facilisi. Etiam sagittis congue
             tempor.
             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
@@ -13,7 +13,7 @@
             Phasellus semper tellus malesuada turpis gravida cursus.
             Duis nec eleifend nunc, vitae finibus elit. Aliquam eget diam vitae purus suscipit viverra.
         </p>
-        <div style="text-decoration: none;" id="footer-link">
+        <div id="footer-link">
             <a href="">Termos de Serviço</a>
             <a href="">Politica de Privacidade</a>
             <a href="">Trabalhe conosco</a>
@@ -24,7 +24,7 @@
 </template>
 <script>
 export default {
-    name:"page-footer"
+    name: "page-footer"
 }
 </script>
 <style>
@@ -38,30 +38,38 @@ export default {
 .page-footer {
     background: #0B1641;
     justify-content: center;
-    height: 20rem;
+    height: 11rem;
     padding: 8rem;
     align-items: center;
+}
+
+#footer-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
 #footer-text {
     display: flex;
     justify-content: center;
-    color: #FFFFFF;
+    align-content: flex-start;
+    margin: 0 10rem 0 10rem;
+    color: #ffffff9f;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 
 #footer-link {
     display: flex;
+    justify-items: flex-start;
     color: #FFFFFF;
     margin-bottom: 2px;
     font-weight: bold;
-    margin: 12rem;
-
+    margin-top: 3rem;
+    margin-left: 8rem;
 }
 
-#footer-icon {
-    display: flex;
-    margin: 0;
+#footer-link a {
+    margin-left: 2rem;
+    color: #FFFFFF;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <NavBar />
-    <OfferFilter/>
+    <OfferFilter/> 
     <OfferList />
     <PageFooter />
   </div>
@@ -19,7 +19,7 @@ export default {
     NavBar,
     OfferList,
     PageFooter,
-    OfferFilter
+    OfferFilter,
     
   }
 }
@@ -36,6 +36,8 @@ export default {
   align-content: center;
   justify-content: center;
   background-size: 100%;
-  background-position: cover
+  background-position: cover;
+  display:flex;
+  flex-direction: column;
 }
 </style>

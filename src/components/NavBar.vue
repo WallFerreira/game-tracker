@@ -1,43 +1,44 @@
 <template>
     <div class="navbar">
-        <div>
-            <img id="icone" src="../assets/Vector.png" alt="">
-            <img id="logo" src="../assets/Game_Tracker.png" alt="">
+        <div class="navbar-icons">
+            <img id="icone" src="../assets/Vector.svg" alt="">
+            <img id="logo" src="../assets/Game_Tracker.svg" alt="">
         </div>
     </div>
 </template>
 <script>
 export default {
-    name:"nav-bar"
+    name: "nav-bar"
 
 }
 </script>
 <style scoped>
-*{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.navbar-icons {
+    display: flex;
+    align-content: space-between;
+    background: #0B1641;
+    height: 2rem;
+    padding: 0.3rem
 }
 
-.navbar {
-    align-content: space-between;
-    height: 2rem;
-    background: #0B1641;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.navbar img #logo{
+#logo {
+    display: flex;
     height: 1rem;
-    display: inline;
-    margin-left: 1px;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+
     justify-content: center;
 }
 
-nav
-
-.navbar-item{
-    display: inline;
-    color: #FFFFFF;
-    text-decoration: none;
+#icone {
+    display: flex;
+    
+    margin-left: 19.6rem;
 }
 </style>
