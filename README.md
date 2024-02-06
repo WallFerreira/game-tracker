@@ -1,4 +1,4 @@
-# game-tracker
+# Game-tracker
 
 Projeto de uma pagina desenvolvida com vue.js.
 
