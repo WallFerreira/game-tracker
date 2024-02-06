@@ -1,43 +1,40 @@
 <template>
   <div id="app">
     <NavBar />
-    <OfferFilter/> 
+    <OfferFilter />
     <OfferList />
     <PageFooter />
   </div>
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue';
-import OfferList from './components/OfferList.vue';
-import PageFooter from './components/PageFooter.vue';
-import OfferFilter from './components/OfferFilter.vue';
+import NavBar from "./components/NavBar.vue"
+import OfferList from "./components/OfferList.vue"
+import PageFooter from "./components/PageFooter.vue"
+import OfferFilter from "./components/OfferFilter.vue"
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     NavBar,
     OfferList,
     PageFooter,
     OfferFilter,
-    
-  }
+  },
 }
 </script>
 
 <style>
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  background: linear-gradient(45deg, #0B1641 0%, #C70160 100%), #FFFFFF;
+  background: linear-gradient(100deg, #0b1641 0%, #c70160 100%), #ffffff;
   align-content: center;
   justify-content: center;
-  background-size: 100%;
-  background-position: cover;
-  display:flex;
+  background-size: auto;
+  display: flex;
   flex-direction: column;
+  min-width: 1240px;
 }
 </style>
