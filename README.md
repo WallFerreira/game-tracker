@@ -5,8 +5,8 @@ Projeto de uma pagina desenvolvida com vue.js.
 Página de jogos dinâmica que busca os jogos de uma API de games, infoma valor, desconto e detalhes.
 
 
+![game-tracker](https://github.com/WallFerreira/game-tracker/assets/47425983/be7d1abb-48b5-4a76-a986-76c73af9f5b5)
 
-![Game tracker front](https://user-images.githubusercontent.com/47425983/228638264-d2fb1ab7-cdf8-43dd-b264-5f12ae04f1b5.png)
 
 
 
